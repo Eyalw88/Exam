@@ -29,7 +29,7 @@ def CreateCSV(query, FileName):
 
 #Question 2.3
 def CreateJSON(query, FileName):
-    db = sqlite3.connect('C:\sqlite\chinook.db')
+    db = sqlite3.connect(DBlocation)
     cur = db.cursor()
     sql = query
     cur.execute(sql)
